@@ -38,7 +38,16 @@ theme = 'hugo-theme-relearn'
   author.name = 'Atanas Viyachki'
   logo = { src = '/images/odef-logo.png' }
   linkTitle = ' '
-  themeVariant = ['auto', 'relearn-light', 'relearn-dark']
+  [[params.themeVariant]]
+    identifier = 'auto'
+    name = 'Auto'
+    auto = ['odef-light', 'odef-dark']
+  [[params.themeVariant]]
+    identifier = 'odef-light'
+    name = 'Light'
+  [[params.themeVariant]]
+    identifier = 'odef-dark'
+    name = 'Dark'
   showVisitedLinks = true
   disableLandingPageButton = true
   disableBreadcrumb = false

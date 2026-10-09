@@ -1,0 +1,16 @@
+@import "theme-relearn-light.css";
+
+:root {
+  /* ODEF purple, carried over from the original Learn theme */
+  --PRIMARY-color: rgba( 132, 81, 161, 1 );
+  --PRIMARY-HOVER-color: rgba( 156, 111, 182, 1 );
+  --MENU-HEADER-color: rgba( 255, 255, 255, 1 );
+  --MENU-HEADER-BG-color: rgba( 132, 81, 161, 1 );
+  --MENU-HEADER-BORDER-color: rgba( 156, 111, 182, 1 );
+  --MENU-SEARCH-color: rgba( 255, 255, 255, 1 );
+  --MENU-SEARCH-BG-color: rgba( 108, 62, 135, 1 );
+  --MENU-SEARCH-BORDER-color: rgba( 156, 111, 182, 1 );
+  --MENU-SECTION-ACTIVE-CATEGORY-color: rgba( 199, 156, 227, 1 );
+  --MENU-VISITED-color: rgba( 156, 111, 182, 1 );
+  --CODE-INLINE-color: rgba( 199, 156, 227, 1 );
+}
