@@ -1,6 +1,9 @@
 +++
 title = "Lessons from the Field"
-weight = 25
+chapter = true
+weight = 60
+pre = "<b>5. </b>"
+aliases = ["/odef/lessons-learned/"]
 draft = false
 description = "What running ODEF in production for several years taught us about the framework itself."
 +++
