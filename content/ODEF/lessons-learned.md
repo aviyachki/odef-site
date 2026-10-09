@@ -1,7 +1,7 @@
 +++
 title = "Lessons from the Field"
 weight = 25
-draft = true
+draft = false
 description = "What running ODEF in production for several years taught us about the framework itself."
 +++
 
@@ -10,10 +10,6 @@ description = "What running ODEF in production for several years taught us about
 ODEF was written in 2023 as a model of how detection engineering *should* work. Since then it has run as the backbone of a production detection platform for several years. This page is the honest record of where the model held, where it bent, and where practice quietly replaced it.
 
 Everything here is methodology. No vendor, product, or employer specifics.
-
-<!-- EDITOR NOTES: each section below has QUESTIONS (for you to answer) and
-     CANDIDATE lessons (my inference from the existing wiki text; confirm, edit, or delete).
-     Delete this comment block and the question lists before publishing. -->
 
 ## Detection ideas come from anywhere
 
@@ -62,79 +58,82 @@ There is also a practical argument the framework missed. An indicator detection 
 * Measure the two types separately. Indicator hits and behavioural hits tell you different things. Mixing them in one true positive count hides the fact that the cheap layer is carrying more than its share.
 * Stop treating the Pyramid of Pain as a priority order. It describes attacker cost, not defender value. Low on the pyramid is often where the highest return per hour of engineering sits.
 
+<!-- UNWRITTEN SECTIONS (restore one at a time as they get answered)
+
 ## The lifecycle held, the phases did not weigh the same
 
-<!-- QUESTIONS
+[[ QUESTIONS
 - What share of engineering time actually went to Sunrise vs Midday vs Sunset?
 - Did the "Midday is the longest phase" claim hold? Was it also the most expensive?
 - Were there functions nobody ever did? Which ones got skipped first under pressure?
--->
+]]
 
-<!-- CANDIDATE: Sunset collapsed into a status flip. The Sunset page already says
+[[ CANDIDATE: Sunset collapsed into a status flip. The Sunset page already says
      decommissioning is "change the status field to Sunset". Was the knowledge-preservation
-     half of Sunset ever done as a separate step, or did the KB document just go stale? -->
+     half of Sunset ever done as a separate step, or did the KB document just go stale? ]]
 
 ## Sunrise: research is where fidelity is decided
 
-<!-- QUESTIONS
+[[ QUESTIONS
 - Of the six Sunrise functions (Research, Prepare, Build, Validate, Automate, Share),
   which one most predicted whether a detection survived a year?
 - Did "Develop Research Questions" survive as a real step, or did it fold into Technical Context?
 - How often did the Visibility Check fail and spawn a logging improvement initiative?
   Did that loop (Prepare -> Improve -> back to Build) actually work, or did detections ship with known blind spots?
 - Baselines: did they grow without bound? Who owned pruning them?
--->
+]]
 
-<!-- CANDIDATE: The data dictionary paid for itself. The Prepare function says to grow a
-     data dictionary "to quickly refer to". Did it exist, and was it the asset people reached for? -->
+[[ CANDIDATE: The data dictionary paid for itself. The Prepare function says to grow a
+     data dictionary "to quickly refer to". Did it exist, and was it the asset people reached for? ]]
 
 ## Build: unit tests found the wrong bugs
 
-<!-- QUESTIONS
+[[ QUESTIONS
 - The wiki lists three unittest goals: missing data, syntax errors, true-positive confirmation.
   Which of the three caught real problems? Which was theatre?
 - Did "true positive validation" via emulation happen, or was it almost always a historical event?
 - What did the CI pipeline actually gate on by the end?
--->
+]]
 
 ## Midday: the metrics that mattered
 
-<!-- QUESTIONS
+[[ QUESTIONS
 - The Measure function proposes ATT&CK coverage %, automation success/failure, runtime length.
   Which did you keep? Which did you stop looking at?
 - What was the real signal that a detection needed work: analyst complaints, FP volume, runtime, something else?
 - Did periodic review happen on a schedule, or only when something broke?
--->
+]]
 
-<!-- CANDIDATE: Runtime was the best health metric. The Midday page already calls out
-     query runtime as a proxy for poorly written logic. Was that true in practice? -->
+[[ CANDIDATE: Runtime was the best health metric. The Midday page already calls out
+     query runtime as a proxy for poorly written logic. Was that true in practice? ]]
 
 ## Share: the dependency tree and the notification process
 
-<!-- QUESTIONS
+[[ QUESTIONS
 - The "Sec Dependency Tree" document: did it exist, and did anyone outside security consult it
   before renaming an index?
 - What form did "socialize the detection" take, and did anyone read it?
--->
+]]
 
 ## Detection as Code: what the YAML schema got wrong
 
-<!-- QUESTIONS
+[[ QUESTIONS
 - Which fields in the published YAML template were never used?
 - Which fields were missing and got added in the first six months?
 - Did a single file per detection scale, or did you need a different layout?
 - Was the Markdown README per detection maintained, or did the YAML become the only source of truth?
--->
+]]
 
 ## Maturity model: was self-assessment honest?
 
-<!-- QUESTIONS
+[[ QUESTIONS
 - Did the three DEMM levels (Partial, Adequate, Enabled) ever get formally assessed?
 - Did the Maturity Review Process (Collect, Analyze, Prioritize, Improve) run on a cadence?
 - What would you change about the levels now?
--->
+]]
 
 ## What we would change in ODEF today
 
-<!-- Summarize into a short list once the sections above are filled. Each item should
-     map to a concrete edit elsewhere on the wiki so this page drives the reboot. -->
+[[ Summarize into a short list once the sections above are filled. Each item should
+     map to a concrete edit elsewhere on the wiki so this page drives the reboot. ]]
+-->
