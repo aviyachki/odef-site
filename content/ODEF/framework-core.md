@@ -29,8 +29,8 @@ Guidelines act as reference materials that support the achievement of goals with
 
 The Core encompasses three primary lifecycle phases:
 
-* **[Sunrise]({{< ref "Sunrise" >}})**
-* **[Midday]({{< ref "Midday" >}})**
-* **[Sunset]({{< ref "Sunset" >}})**
+* **[Sunrise]({{% ref "Sunrise" %}})**
+* **[Midday]({{% ref "Midday" %}})**
+* **[Sunset]({{% ref "Sunset" %}})**
 
 These phases collectively chronicle the lifespan of a detection mechanism, from its conception to its eventual retirement/decommissioning.

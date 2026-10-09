@@ -2,6 +2,7 @@
 title: "Home"
 date: 2023-03-27T21:29:13-04:00
 draft: false
+description: "Open Detection Engineering Framework Wiki Page"
 ---
 ## Welcome
 

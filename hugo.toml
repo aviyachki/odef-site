@@ -1,0 +1,50 @@
+baseURL = 'https://www.odef.wiki/'
+locale = 'en-US'
+title = 'ODEF'
+theme = 'hugo-theme-relearn'
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+[outputs]
+  home = ['html', 'rss', 'print']
+  section = ['html', 'rss', 'print']
+  page = ['html', 'print']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  author.name = 'Atanas Viyachki'
+  logo = { src = '/images/odef-logo.png' }
+  linkTitle = ' '
+  themeVariant = ['auto', 'relearn-light', 'relearn-dark']
+  showVisitedLinks = true
+  disableLandingPageButton = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+  ordersectionsby = 'weight'
+  titleSeparator = '-'
+  editURL = ''
+
+enableEmoji = true
