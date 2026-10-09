@@ -19,7 +19,7 @@ baseline: "{{ baseline }}"
 visualization: "{{ visualization }}"
 event_limit: 0
 data_source: "{{ data_source }}"
-data_location: "{{ data_source }}"
+data_location: "{{ data_location }}"
 tactic: "{{ tactic }}"
 mitre_id: "{{ mitre_id }}"
 mitre_url: "{{ mitre_url }}"

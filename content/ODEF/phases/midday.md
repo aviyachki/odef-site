@@ -28,7 +28,7 @@ High level goals for the Midday phase:
 </thead>
 <tbody>
   <tr>
-    <td rowspan="3"><b>Monitor</></td>
+    <td rowspan="3"><b>Monitor</b></td>
     <td>Run as per defined schedule</td>
     <td>Detection is configured to run on pre-defined schedule or real time if applicable</td>
     <td>Detections will run based on the schedule set during the sunrise phase. </td>
@@ -53,13 +53,13 @@ High level goals for the Midday phase:
     <td><b>Improve (optional)</b></td>
     <td>Improve detection fidelity</td>
     <td>Once improvement opportunities have been identified during the operations or periodic review an improvement is triggered </td>
-    <td>The goal of this function is to improve any detections which are with poor health (slow runtime, causing errors) and improve them by revisiting the detention logic. </td>
+    <td>The goal of this function is to improve any detections which are with poor health (slow runtime, causing errors) and improve them by revisiting the detection logic. </td>
   </tr>
   <tr>
     <td><b>Review</b></td>
     <td>Perform periodic review</td>
     <td>Review detections to identify improvement opportunities or decommission requirements</td>
-    <td>Detection can become irrelevant and thus decommissioned whe: <br>The risk that it is compensating is far smaller than the cost of running the detection<br>The technology used for the detection is no longer present in the company <br></td>
+    <td>Detection can become irrelevant and thus decommissioned when: <br>The risk that it is compensating is far smaller than the cost of running the detection<br>The technology used for the detection is no longer present in the company <br></td>
   </tr>
 </tbody>
 </table>
@@ -69,8 +69,8 @@ High level goals for the Midday phase:
 
 {{<mermaid align="left">}}
 graph TD;
-Monitor1(Run per schedule) -->Monitor2(Receive alerts);
-Monitor2(Respond to alerts) --> Monitor3{False Positives?} ;
+Monitor1(Run per schedule) -->Monitor2(Receive and respond to alerts);
+Monitor2 --> Monitor3{False Positives?} ;
 Monitor3 --> |no| Measure[Document TP];
 Measure --> Review(Perform periodic review)
 Monitor3 --> |yes| Improve(Improve);

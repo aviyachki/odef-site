@@ -12,8 +12,8 @@ During the “Sunset” phase the detection is taken out of commission. The phas
 
 High level goals for the Sunset phase:
 <ul>
-  <li>Decommission the detection and leave it in a state that it can be resumed anytime
-  <li>Preserve knowledge
+  <li>Decommission the detection and leave it in a state that it can be resumed anytime</li>
+  <li>Preserve knowledge</li>
 </ul>
 
 <table>

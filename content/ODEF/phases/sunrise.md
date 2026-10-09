@@ -92,8 +92,8 @@ Sunrise is the first phase of the detection lifecycle. It marks the inception, d
 </td>
   </tr>
   <tr>
-    <td> <b>Prepare</b><br></td>
-    <td> Identify Dataset</span></td>
+    <td rowspan="3"><b>Prepare</b></td>
+    <td> Identify Dataset</td>
     <td> Identify the log source that will be used for the detection</td>
     <td>  <b>Know your environment</b>
       <ul>
@@ -103,7 +103,7 @@ Sunrise is the first phase of the detection lifecycle. It marks the inception, d
 </td>
   </tr>
   <tr>
-    <td><b>Visibility Check</b></span></td>
+    <td>Visibility Check</td>
     <td>  Ensure there is sufficient logging, retention and visibility in order to successfully build the detection and satisfy the use case</td>
     <td>  
       <ul>
@@ -114,7 +114,7 @@ Sunrise is the first phase of the detection lifecycle. It marks the inception, d
 </td>
   </tr>
   <tr>
-    <td><b>Improve(optional)</b></span></td>
+    <td>Improve (optional)</td>
     <td>  Once the data is explored we can identify opportunities for improvements such as:
       <ul>
         <li>Collecting additional logs or change logging levels </li>
@@ -126,34 +126,34 @@ Sunrise is the first phase of the detection lifecycle. It marks the inception, d
 </td>
   </tr>
   <tr>
-    <td><b>Build &amp; Enrich</b></td>
-    <td>  Detection Creation</span></td>
+    <td rowspan="6"><b>Build &amp; Enrich</b></td>
+    <td>  Detection Creation</td>
     <td>  Create a detection query against the identified dataset</td>
     <td>  Having a good understanding of the technical context and the data source begin building queries to narrow down the data to actionable insight.</td>
   </tr>
   <tr>
-    <td><b>Manual Testing</b></span></td>
+    <td>Manual Testing</td>
     <td>  Perform a manual testing and ensure the query works syntax and logical perspective</td>
     <td>  
     <ul>
         <li>Ensure the query does not have any syntax errors</li>
-        <li>In case the detection is build in response to past incident ensure that the query is indeed catching true positive events</li>
+        <li>In case the detection is built in response to past incident ensure that the query is indeed catching true positive events</li>
     </ul>
       </td>
   </tr>
   <tr>
-    <td><b>Baseline development</b></span></td>
+    <td>Baseline development</td>
     <td>  Develop a baseline (if needed) that will improve the detection fidelity</td>
     <td>  
         <ul>
           <li>Baselines are sets of known and verified good behaviors and events present in the organization. Those events are normally excluded from the detection logic. </li>
-          <li>Baselines decisions and considerations should be documented and clearly states in the ADS</li>
+          <li>Baselines decisions and considerations should be documented and clearly stated in the ADS (Alerting and Detection Strategy)</li>
           <li>Baselines are included in the hunt.yml/tf/hcl or alert.yml/tf/hcl files</li>
         </ul>
     </td>
   </tr>
   <tr>
-    <td><b>Unittest Development</b></span></td>
+    <td>Unittest Development</td>
     <td>  The unittest development is dependent on the type of devops pipeline. Simple goals are provided.
         </td>
     <td>  Goals for the unittesting:
@@ -172,12 +172,12 @@ Sunrise is the first phase of the detection lifecycle. It marks the inception, d
         </ul> </td>
   </tr>
   <tr>
-    <td>Document</span></td>
+    <td>Document</td>
     <td>  
         <ul>
           <li>Create KB Document</li>
           <li>Complete the ADS </li>
-          <li> Mitre minefield update</li>
+          <li> MITRE ATT&amp;CK coverage map update</li>
         </ul>
         </td>
     <td>  
@@ -187,8 +187,8 @@ Sunrise is the first phase of the detection lifecycle. It marks the inception, d
         </ul></td>
   </tr>
   <tr>
-    <td>  Validate</td>
-    <td>  Confirm unittests</span></td>
+    <td rowspan="3"><b>Validate</b></td>
+    <td>  Confirm unittests</td>
     <td>  Confirm unittest are working </td>
     <td>  Confirmation of the unittests can be done by inspecting the implemented devops pipeline and ensuring that the actions (in the case of github) for unittests are running</td>
   </tr>
@@ -216,13 +216,13 @@ Sunrise is the first phase of the detection lifecycle. It marks the inception, d
     </td>
   </tr>
   <tr>
-    <td>  Automate</td>
-    <td>  Automation &amp; deployment</span></td>
-    <td>  This step is entirely dependant on the environment and should follow the standard ci/cd or automation practices of the organization. </td>
+    <td><b>Automate</b></td>
+    <td>  Automation &amp; deployment</td>
+    <td>  This step is entirely dependent on the environment and should follow the standard ci/cd or automation practices of the organization. </td>
     <td>  Integrate with devops pipeline and enable continuous deployment </td>
   </tr>
   <tr>
-    <td>  Share</td>
+    <td rowspan="2"><b>Share</b></td>
     <td>  Socialize the new detection</td>
     <td>  A notification process is required and it should be created. The process can be in the form of newsletter or slack channel notification, preferably automated one.</td>
     <td>  Follow a process to communicate the newly created detection with the Security Teams and inform them about it</td>

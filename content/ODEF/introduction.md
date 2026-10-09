@@ -6,13 +6,12 @@ draft = false
 
 ## Purpose
 
-ODEF enables organization to establish and apply fundamental principles and best practices in detection engineering.
-Adopting ODEF catalyzes service enhancement, process refinement, and maturity in cybersecurity practices.
+**ODEF** enables organizations to establish and apply fundamental principles and best practices in detection engineering.
+Adopting ODEF accelerates service enhancement, refines processes, and advances cybersecurity maturity.
 
-The framework is strategically oriented around leveraging business objectives to steer cybersecurity efforts. It enables the creation of robust detection systems, enhances visibility, reduces reliance on vendors, and, most importantly, strengthens an organization's overall security stance. ODEF not only articulates the principles for proficient detection engineering but also introduces a three-tiered maturity model for assessing organizational performance.
+The framework strategically aligns cybersecurity efforts with business objectives (e.g., risk reduction and operational resilience). It enables the creation of robust detection systems, provides assurance, reduces reliance on vendors, and, most importantly, strengthens an organization's overall security stance. ODEF defines core principles for effective detection engineering and introduces a three-tiered maturity model to evaluate organizational performance.
 
-Each phase within the framework's core is meticulously designed to outline the detection lifecycle, directing the detection engineer's efforts with focused phase functions and steering them through the entire process.
-The maturity levels serve as benchmarks, offering organizations a macroscopic view of their detection engineering strategy and pinpointing potential areas for enhancement.
+Each phase within the framework's core is meticulously crafted to map out the detection lifecycle, guiding detection engineers with focused functions and outcomes expectations that steer them through the entire process. The maturity levels act as strategic benchmarks, providing organizations with a high-level perspective on their detection engineering strategy and highlighting areas for potential improvement.
 
 ## High-Level Goals
 
@@ -23,8 +22,8 @@ The overarching ambitions of the framework are to:
 * Transform insights into sustainable, actionable knowledge while fostering a culture of information sharing.
 * Promote persistent vigilance in detection practices.
 * Validate detections rigorously through systematic testing.
-* Cultivate an environment where knowledge is the main driver of security initiatives.
+* Cultivate an environment where knowledge and knowledge sharing is the main driver of security initiatives.
 
 ## Framework Mindmap
 
-![](/images/mindmap.png)
+!["ODEF Mindmap"](/images/mindmap.png)

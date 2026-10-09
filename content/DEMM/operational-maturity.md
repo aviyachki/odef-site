@@ -1,6 +1,6 @@
 +++
 title = "Operational Maturity"
-weight = 15
+weight = 16
 draft = false
 +++
 
@@ -9,9 +9,9 @@ draft = false
 The process of evaluating the maturity:
 
 <ul>
-  <li><b>Collect</b> - Collect information about your processes,people and tools. Identify changes to any. The goal is to gain a holistic understanding of the organization's security teams, tools and processes. Based on that information various posture improvements can be identified.
+  <li><b>Collect</b> - Collect information about your processes, people and tools. Identify changes to any. The goal is to gain a holistic understanding of the organization's security teams, tools and processes. Based on that information various posture improvements can be identified.
 </li>
-  <li><b>Analize</b> - Based on the data that you have collected and find the corresponding maturity level. Finding where in the maturity level the organization is important for understanding the impact and importance of each identified security improvement initiative and thus prioritize accordingly.
+  <li><b>Analyze</b> - Based on the data that you have collected and find the corresponding maturity level. Finding where in the maturity level the organization is important for understanding the impact and importance of each identified security improvement initiative and thus prioritize accordingly.
 </li>
   <li><b>Prioritize</b> - Prioritize and decide which is the next low hanging fruit that can be improved. Not all security issues are equally important, prioritization should focus on those initiatives that influence and change the security posture and introduce the most maturity.
 </li>
@@ -29,6 +29,7 @@ Security improvement initiatives are likely outcomes of the MRP process. The goa
 <p align="justify">
 Evaluating the maturity of the organization and striving to improve it is no one time effort or activity. For that best results can be achieved by:
 </p>
+<ul>
   <li> Set a regular schedule for reevaluating and revisiting the DEMM. </li>
   <li> Ensure that the security improvement initiatives are targeted with a timeline and aligned with the overall organizational security strategy. </li>
 </ul>

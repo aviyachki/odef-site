@@ -30,13 +30,13 @@ The goal section provides the intended purpose of the alert. It is a simple, pla
 
 ### Categorization
 
-The categorization is a mapping of the detection to the relevant entry in the MITRE ATT&CK. This is used in reporting with tools such as Mitre Att&CK Navigator to visualize coverage of TTPs and provide assurance. Additionally when a TTP is mapped to MITRE it can be used to perform attacker cyber attributed.  
+The categorization is a mapping of the detection to the relevant entry in the MITRE ATT&CK. This is used in reporting with tools such as Mitre Att&CK Navigator to visualize coverage of TTPs and provide assurance. Additionally when a TTP is mapped to MITRE it can be used to perform attacker attribution.  
 
 #
 
 ### Technical Context
 
-Technical Context provides detailed information and background needed for a responder or an engineer to understand all components of the detection.The goal of the section is to include technical research for the TTP and additionally how it relates to the environment. It can help incident responders to understand better the alert and also security engineers in order to address a technical security gap.
+Technical Context provides detailed information and background needed for a responder or an engineer to understand all components of the detection. The goal of the section is to include technical research for the TTP and additionally how it relates to the environment. It can help incident responders to understand better the alert and also security engineers in order to address a technical security gap.
 
 #
 
