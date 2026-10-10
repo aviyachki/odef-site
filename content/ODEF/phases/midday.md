@@ -20,10 +20,10 @@ High level goals for the Midday phase:
 <table>
 <thead>
   <tr>
-    <th><b>Functions</b></th>
-    <th><b>Goal</b></th>
-    <th><b>Description</b></th>
-    <th><b>Guidelines</b></th>
+    <th>Function</th>
+    <th>Activity</th>
+    <th>Description</th>
+    <th>Guidelines</th>
   </tr>
 </thead>
 <tbody>

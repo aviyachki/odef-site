@@ -28,10 +28,10 @@ Sunrise is the first phase of the detection lifecycle. It marks the inception, d
 <table >
 <thead>
   <tr>
-    <th>Functions</th>
-    <th >Goal</th>
-    <th >Description</th>
-    <th >Guidelines</th>
+    <th>Function</th>
+    <th>Activity</th>
+    <th>Description</th>
+    <th>Guidelines</th>
   </tr>
 </thead>
 <tbody>

@@ -19,8 +19,8 @@ High level goals for the Sunset phase:
 <table>
 <thead>
   <tr>
-    <th>Functions</th>
-    <th>Goal</th>
+    <th>Function</th>
+    <th>Activity</th>
     <th>Description</th>
     <th>Guidelines</th>
   </tr>
