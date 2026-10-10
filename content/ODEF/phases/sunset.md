@@ -30,13 +30,13 @@ High level goals for the Sunset phase:
     <td rowspan="2"><b>Decommission</b></td>
     <td>Decommission the detection</td>
     <td>The goal is to decommission the detection by following process that provides visibility </td>
-    <td>In order to decommission a detection simply change the status field to "Sunset" in the .yml file. Assuming your devops pipeline is configured correctly, this should effectively disable the detections and prevent it from running.
-    <br>Note: Do not remove anything from the repository as detections can be reused in future. </td>
+    <td>The <b>owner</b> makes the Sunset decision, against the triggers listed in the Midday Review activity, and records the reason in the detection's YAML file. To decommission, change the status field to "Sunset". Assuming your pipeline is configured correctly, this disables the detection and prevents it from running.
+    <br>Note: Do not remove anything from the repository as detections can be reused in future. Remove the detection's exceptions, though; they should not outlive it. </td>
   </tr>
   <tr>
     <td>Knowledge base update</td>
     <td>Create an adequate indication in the KB document that the detection is no longer active and socialize the change with your security teams.</td>
-    <td>Update Mitre coverage map by removing the coverage that the detection was providing</td>
+    <td>Update the coverage map by removing the coverage that the detection was providing. If this leaves a technique in the threat model uncovered, that is a new opportunity for the <a href="/odef/strategy/">strategy backlog</a>, not a silent gap. Notify the responding team so runbooks that reference the detection are retired too.</td>
   </tr>
 </tbody>
 </table>

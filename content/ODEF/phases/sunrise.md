@@ -7,7 +7,7 @@ draft = false
 
 ## Phase 1️⃣ Sunrise 🌅
 
-Sunrise is the first phase of the detection lifecycle. It marks the inception, development and deployment of the detection. During that phase there are 6 core functions that should be addressed:
+Sunrise is the first phase of the detection lifecycle. It marks the inception, development and deployment of the detection. During that phase there are 6 core functions that should be addressed. Indicator detections use a shortened path; see <a href="/odef/strategy/">Detection Strategy</a> for how each detection type moves through Sunrise.
 
 * Research
 * Prepare (Logging)
@@ -38,13 +38,15 @@ Sunrise is the first phase of the detection lifecycle. It marks the inception, d
   <tr>
     <td rowspan="5"><b>Research</b></td>
     <td> Opportunity Identification</td>
-    <td> It can be triggered from analyzing threat intelligence reports, or OSINT, or internal knowledge for a particular security gap. Document the use case and the goals of the detection as part of the opportunity identification process. </td>
+    <td> Opportunities come from the <a href="/odef/strategy/">strategy layer</a>: the threat model, the coverage map, incident reviews, and intake from across the company. Threat intelligence and OSINT are inputs, not the only ones. Record the source of every opportunity. Decide the <b>detection type</b> here, because it determines how much of Sunrise applies. </td>
     <td>  
 
 * Document the use case that you’re building and set goals.
-* Is the TTP already covered by an existing alert or detection?
+* Record where the idea came from (intake, incident, threat intel, coverage gap). This is a maturity signal.
+* Is the TTP already covered by an existing alert or detection, including vendor controls?
+* Is this an indicator, behavioural, correlation, anomaly, or hunt? Indicator detections take the fast lane: intake, dedupe, retroactive search, deploy.
 * Is there sufficient knowledge to start building or additional research would be required?
-* What are sources of information that will assist the research?
+* Close the loop with whoever raised the opportunity, whatever the outcome.
 
 </td>
   </tr>
@@ -126,7 +128,7 @@ Sunrise is the first phase of the detection lifecycle. It marks the inception, d
 </td>
   </tr>
   <tr>
-    <td rowspan="6"><b>Build &amp; Enrich</b></td>
+    <td rowspan="7"><b>Build &amp; Enrich</b></td>
     <td>  Detection Creation</td>
     <td>  Create a detection query against the identified dataset</td>
     <td>  Having a good understanding of the technical context and the data source begin building queries to narrow down the data to actionable insight.</td>
@@ -170,6 +172,18 @@ Sunrise is the first phase of the detection lifecycle. It marks the inception, d
           <ul>
           <li>Each hunt could have different enrichment requirements. In some cases HR database could be used in order to understand if a person is on vacation, other trivial cases could be lookup of a hash, ip or domain in an threat intelligence repository etc.</li>
         </ul> </td>
+  </tr>
+  <tr>
+    <td>Alert Design</td>
+    <td>  Design what the analyst receives. The alert is the product; the query is the implementation.</td>
+    <td>
+      <ul>
+        <li>Decide the alert payload: which fields the analyst needs in the first thirty seconds (who, what, where, when, and the evidence that triggered it). Enrichment belongs here, not in a later lookup.</li>
+        <li>Write the runbook: what the analyst checks first, what a benign explanation looks like, what escalation looks like, and who owns the affected system.</li>
+        <li>Set severity from impact and priority from response capacity. A critical detection that fires fifty times a day is, in practice, informational.</li>
+        <li>Estimate expected volume and confirm the responding team can absorb it before deployment.</li>
+      </ul>
+    </td>
   </tr>
   <tr>
     <td>Document</td>
@@ -252,7 +266,8 @@ Build1 --> Build2(Manual Testing);
 Build2 --> Build3(Baseline development);
 Build3 --> Build4(Automated Unittest Development);
 Build4 -->Build5(Enrich);
-Build5 --> Build6(Document);
+Build5 --> Build5a(Alert Design);
+Build5a --> Build6(Document);
 Build6 -->  Validate1(Confirm unittests);
 Validate1 -->val2(True/False Positive validation);
 val2-->automate(Automation & deployment);
