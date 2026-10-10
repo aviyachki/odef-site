@@ -10,4 +10,4 @@ draft = false
 
 ## Open Detection Engineering Framework
 
-A detection engineering story
+The lifecycle of a detection from idea to retirement, the strategy layer that decides what to build, and the functions and activities inside each phase.

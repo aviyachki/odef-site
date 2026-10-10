@@ -10,4 +10,4 @@ draft = false
 
 ## Knowledge management
 
-The importance of knowledge in an organization
+A detection nobody can understand at two in the morning is not a detection. This chapter covers the practice of keeping detection knowledge findable, current, and written for the responder.

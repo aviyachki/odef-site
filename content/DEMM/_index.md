@@ -10,4 +10,4 @@ draft = false
 
 ## Detection Engineering Maturity Model
 
-Working with the Detection Engineering Maturity Model
+Five dimensions, three levels, and a rubric with concrete criteria so two teams scoring the same organization reach the same answer.
