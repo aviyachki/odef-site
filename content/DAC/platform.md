@@ -9,7 +9,7 @@ draft = false
 
 The YAML schema and the pipeline are enough to run Detection as Code with nothing but a Git repository and a CI runner. What they do not give you is a place to look: a registry where anyone in the company can see what is detected, by whom, in what state, and where the gaps are. That is the piece most teams end up building for themselves.
 
-ODEF has a reference implementation of that piece, started in 2024 and paused, which we are proposing to resume as the open source platform for the framework: **[0xd3f/odef on GitHub](https://github.com/0xd3f/odef)**, MIT licensed.
+ODEF has a reference implementation of that piece, started in 2024 and paused, which we are proposing to resume as the open source platform for the framework: **[0xd3f/odef-platform on GitHub](https://github.com/0xd3f/odef-platform)**, MIT licensed.
 
 ### Where it sits
 
