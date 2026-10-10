@@ -14,6 +14,10 @@ Maturity is a self-evaluation process conducted by the team. ODEF provides guida
 * Threat Detection Content
 * Assurance
 * Knowledge sharing
+* Data and Visibility
+* Automation (Detection as Code)
+
+The first three dimensions are described below. The two added dimensions, and concrete criteria for scoring every dimension, are in the **[Assessment Rubric]({{% ref "rubric" %}})**. Use the rubric to place the organization; use this page to understand what each level feels like.
 
 ---
 {{<mermaid align="left">}}
@@ -67,7 +71,7 @@ flowchart RL
   * The security posture of the environment is well understood across the security teams.
 
 - Assurance
-  * The organization possesses a detection coverage map and covers a big percentage with in-house built detections. The organization does not rely on vendors to provide security content.
+  * The organization possesses a detection coverage map with a stated confidence per technique, and in-house detections cover the techniques in its threat model that vendor controls do not. Vendor detections are a known, assessed layer rather than an unknown one; the organization knows what they cover and what they miss.
   * Automation is provided to continuously validate and run the detection use cases.
   * Additional assurance is achieved by running red team exercises and automation frameworks.
 * Knowledge sharing
